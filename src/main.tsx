@@ -1,22 +1,42 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { Experimental_CssVarsProvider as CssVarsProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import GlobalStyles from "@mui/material/GlobalStyles";
+import {Toolbar, Container } from "@mui/material";
+import myTheme from "./theme/MyTheme";
+import Header from "./components/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import Colortesting from "./views/Colortesting";
 
-// THEME
-import { CssBaseline } from '@mui/material'
-import { ThemeProvider } from '@mui/material/styles'
-import mytheme from './theme/MyTheme.tsx'
+const pages = [
+  { label: "Accueil", path: "/" },
+  { label: "Test Couleurs", path: "/colortesting" },
+];
 
-import App from './App.tsx'
+function Main() {
+  return (
+    <CssVarsProvider theme={myTheme} defaultMode="system">
+      <GlobalStyles styles="@layer theme, base, mui, components, utilities;" />
+      <CssBaseline />
+      <BrowserRouter>
+        <Header pages={pages} />
+        <Toolbar />
+        <Container sx={{ pt: 4 }}>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/colortesting" element={<Colortesting />} />
+          </Routes>
+        </Container>
+      </BrowserRouter>
+    </CssVarsProvider>
+  );
+}
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-
-    <CssBaseline />
-
-    <ThemeProvider theme={mytheme}>
-      <App />
-    </ThemeProvider>
-
-  </StrictMode>,
-)
+    <Main />
+  </StrictMode>
+);

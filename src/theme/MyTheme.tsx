@@ -1,20 +1,40 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material";
 
-const mytheme = createTheme({
-  palette: {
-    primary: {
-      main: '#851d4b',
-      // light: will be calculated from palette.primary.main,
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
+const myTheme = createTheme({
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          main: '#00abc9',
+          light: '#5ad6e6',
+          dark: '#007a8a',
+          contrastText: '#fff',
+        },
+        secondary: {
+          main: '#f14628',
+          light: '#ff784e',
+          dark: '#a12e1a',
+          contrastText: '#fff',
+        },
+      },
     },
-    secondary: {
-      main: '##006b36',
-        //
-        //
-        //
+    dark: {
+      palette: {
+        primary: {
+          main: '#90caf9',
+          light: '#e3f2fd',
+          dark: '#0d47a1',
+          contrastText: '#fff',
+        },
+        secondary: {
+          main: '#ffb74d',
+          light: '#ffe97d',
+          dark: '#c88719',
+          contrastText: '#fff',
+        },
+      },
     },
   },
 });
 
-export default mytheme;
+export default myTheme;
