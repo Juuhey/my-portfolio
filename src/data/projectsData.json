@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Portfolio",
+    "description": "Mon site personnel réalisé avec React, MUI et Tailwind.",
+    "image": "/assets/portfolio.png",
+    "link": "https://julienpantel.dev",
+    "tags": ["React", "MUI", "Tailwind"]
+  },
+  {
+    "id": "2",
+    "title": "Weather App",
+    "description": "Application météo utilisant l'API OpenWeatherMap.",
+    "image": "/assets/weather-app.png",
+    "link": "https://weather-app.example.com",
+    "tags": ["React", "API"]
+  },
+  {
+    "id": "3",
+    "title": "E-commerce",
+    "description": "Site e-commerce développé avec React et Redux.",
+    "image": "/assets/ecommerce.png",
+    "link": "https://ecommerce.example.com",
+    "tags": ["React", "Redux"]
+  }
+]
