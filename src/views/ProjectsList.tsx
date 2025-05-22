@@ -1,9 +1,8 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import ProjectCard from "../components/ProjectCard";
-
 import type { Project } from "../types/Project";
-import projectsData from "../data/projects.json";
+import projectsData from "../data/projectsData.json"; // <-- import du JSON
 
 const projects: Project[] = projectsData;
 
