@@ -22,5 +22,37 @@
     "image": "/assets/ecommerce.png",
     "link": "https://ecommerce.example.com",
     "tags": ["React", "Redux"]
+  },
+  {
+    "id": "4",
+    "title": "E-commerce",
+    "description": "Site e-commerce développé avec React et Redux.",
+    "image": "/assets/ecommerce.png",
+    "link": "https://ecommerce.example.com",
+    "tags": ["React", "Redux"]
+  },
+  {
+    "id": "5",
+    "title": "E-commerce",
+    "description": "Site e-commerce développé avec React et Redux.",
+    "image": "/assets/ecommerce.png",
+    "link": "https://ecommerce.example.com",
+    "tags": ["React", "Redux"]
+  },
+  {
+    "id": "6",
+    "title": "E-commerce",
+    "description": "Site e-commerce développé avec React et Redux.",
+    "image": "/assets/ecommerce.png",
+    "link": "https://ecommerce.example.com",
+    "tags": ["React", "Redux"]
+  },
+  {
+    "id": "7",
+    "title": "E-commerce",
+    "description": "Site e-commerce développé avec React et Redux.",
+    "image": "/assets/ecommerce.png",
+    "link": "https://ecommerce.example.com",
+    "tags": ["React", "Redux"]
   }
 ]
