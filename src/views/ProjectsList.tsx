@@ -9,18 +9,19 @@ import Typography from "@mui/material/Typography";
 
 const projects: Project[] = projectsData;
 
-// Récupère toutes les technos uniques
-const allTags = Array.from(new Set(projects.flatMap((p) => p.tags ?? [])));
-
 export default function Projects() {
   const [filter, setFilter] = useState<string | null>(null);
 
-  const filteredProjects = filter
-    ? projects.filter((p) => p.tags?.includes(filter))
-    : projects;
-
   const theme = useTheme();
   const tagColors = theme.palette.tagColors ?? {};
+
+  // Récupère toutes les technos/skills du thème (hors "default")
+  const allTags = Object.keys(tagColors).filter((tag) => tag !== "default");
+
+  // Filtre les projets selon la techno sélectionnée
+  const filteredProjects = filter
+    ? projects.filter((p) => p.tags?.map(t => t.toLowerCase()).includes(filter.toLowerCase()))
+    : projects;
 
   return (
     <Box
@@ -41,8 +42,8 @@ export default function Projects() {
           onClick={() => setFilter(null)}
         >
           <Typography variant="h4">
-              Tous
-            </Typography>
+            Tous
+          </Typography>
         </Button>
         {allTags.map((tag) => (
           <Button
@@ -56,6 +57,7 @@ export default function Projects() {
                   ? tagColors[tag.toLowerCase()] || tagColors.default
                   : undefined,
               color: filter === tag ? "#fff" : undefined,
+              // border: tag.toLowerCase() === "nextjs" ? "1.5px solid #fff" : undefined,
               "&:hover": {
                 bgcolor: tagColors[tag.toLowerCase()] || tagColors.default,
                 color: "#fff",
@@ -63,7 +65,7 @@ export default function Projects() {
             }}
           >
             <Typography variant="h4">
-              {tag}
+              {tag.charAt(0).toUpperCase() + tag.slice(1)}
             </Typography>
           </Button>
         ))}

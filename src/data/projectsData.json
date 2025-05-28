@@ -2,57 +2,55 @@
   {
     "id": "1",
     "title": "Portfolio",
-    "description": "Mon site personnel réalisé avec React, MUI et Tailwind.",
-    "image": "/assets/portfolio.png",
-    "link": "https://julienpantel.dev",
-    "tags": ["React", "MUI", "Tailwind"]
+    "description": "Mon site personnel réalisé avec Vite React, MUI et Tailwind.",
+    "image": "/portfolio.png",
+    "link": "",
+    "tags": ["React", "Vite", "MUI", "Tailwind"],
+    "langages": ["Typescript", "HTML", "CSS"]
   },
   {
     "id": "2",
-    "title": "Weather App",
-    "description": "Application météo utilisant l'API OpenWeatherMap.",
-    "image": "/assets/weather-app.png",
-    "link": "https://weather-app.example.com",
-    "tags": ["React", "API"]
+    "title": "Carte intéractive",
+    "description": "Mise en avant des projets de Xylecho répartis en France.",
+    "image": "/xylecho_map.png",
+    "link": "https://map.xylecho.com",
+    "tags": ["React", "Leaflet", "Tailwind", "Nextjs", "API"],
+    "langages": ["JavaScript", "TypeScript", "HTML", "CSS"]
   },
   {
     "id": "3",
-    "title": "E-commerce",
-    "description": "Site e-commerce développé avec React et Redux.",
-    "image": "/assets/ecommerce.png",
-    "link": "https://ecommerce.example.com",
-    "tags": ["React", "Redux"]
+    "title": "Site Webflow",
+    "description": "Refonte du site internet de Xylecho via le CMS Webflow.",
+    "image": "/xylecho_web.png",
+    "link": "https://www.xylecho.com",
+    "tags": ["Webflow"],
+    "langages": []
   },
   {
     "id": "4",
-    "title": "E-commerce",
-    "description": "Site e-commerce développé avec React et Redux.",
-    "image": "/assets/ecommerce.png",
-    "link": "https://ecommerce.example.com",
-    "tags": ["React", "Redux"]
+    "title": "Flyers Sécurité",
+    "description": "Supports physiques pour la sécurité des personnes.",
+    "image": "/flyer_incendie_mine_ales.png",
+    "link": "https://www.figma.com/proto/roKC0vs9IfTXZAvnJmcMV0/Flyer-Incendie?page-id=0%3A1&node-id=5-40&p=f&viewport=-49%2C386%2C0.21&t=KUwwBHIByJ7uRLn0-1&scaling=min-zoom&content-scaling=fixed",
+    "tags": ["Figma"],
+    "langages": []
   },
   {
     "id": "5",
-    "title": "E-commerce",
-    "description": "Site e-commerce développé avec React et Redux.",
-    "image": "/assets/ecommerce.png",
-    "link": "https://ecommerce.example.com",
-    "tags": ["React", "Redux"]
+    "title": "Site d'artiste non officiel",
+    "description": "Maquette + intégration du site web",
+    "image": "/elina_web.png",
+    "link": "https://web-mmi2.iutbeziers.fr/~julien.pantel01/ELINA%20WEB/",
+    "tags": ["Figma"],
+    "langages": ["HTML", "CSS"]
   },
   {
     "id": "6",
-    "title": "E-commerce",
-    "description": "Site e-commerce développé avec React et Redux.",
-    "image": "/assets/ecommerce.png",
-    "link": "https://ecommerce.example.com",
-    "tags": ["React", "Redux"]
-  },
-  {
-    "id": "7",
-    "title": "E-commerce",
-    "description": "Site e-commerce développé avec React et Redux.",
-    "image": "/assets/ecommerce.png",
-    "link": "https://ecommerce.example.com",
-    "tags": ["React", "Redux"]
+    "title": "Site vitrine pour un jeu-vidéo",
+    "description": "Site réalisé en duo pour un jeu-vidéo fictif.",
+    "image": "/bob_game_art.png",
+    "link": "https://web-mmi2.iutbeziers.fr/~nathan.amat/GameJam/",
+    "tags": ["WordPress"],
+    "langages": ["PHP"]
   }
 ]

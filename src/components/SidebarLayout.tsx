@@ -4,8 +4,7 @@ import HeaderNav from "./HeaderNav";
 import { Outlet } from "react-router-dom";
 
 const pages = [
-  { label: "Qui suis-je", path: "/" },
-  { label: "Test Couleurs", path: "/colortesting" },
+  { label: "Qui suis-je ?", path: "/" },
   { label: "Projets", path: "/projets" },
   { label: "CV", path: "/cv" },
 ];

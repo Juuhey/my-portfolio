@@ -10,7 +10,6 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./views/Home";
-import Colortesting from "./views/Colortesting";
 import ProjectsList from "./views/ProjectsList";
 import SidebarLayout from "./components/SidebarLayout";
 import CV from "./views/CV";
@@ -24,7 +23,6 @@ function Main() {
         <Routes>
           <Route path="/" element={<SidebarLayout />}>
             <Route index element={<Home />} />
-            <Route path="colortesting" element={<Colortesting />} />
             <Route path="projets" element={<ProjectsList />} />
             <Route path="cv" element={<CV />} />
           </Route>
