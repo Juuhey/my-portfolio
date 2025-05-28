@@ -80,7 +80,7 @@ export default function CV() {
         </Typography>
       </Box>
 
-      {/* Compétences dynamiques catégorisées */}
+      {/* Skills */}
       <Box>
         <Typography variant="h2" color="secondary.main" sx={{ mb: 2 }}>
           Compétences
@@ -154,7 +154,7 @@ export default function CV() {
         </Box>
       </Box>
 
-      {/* Formation */}
+      {/* Formations */}
       <Box>
         <Typography variant="h2" color="secondary.main">
           Formations

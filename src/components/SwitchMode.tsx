@@ -6,7 +6,7 @@ import Brightness2Icon from '@mui/icons-material/Brightness2';
 export default function SwitchMode() {
   const { mode, setMode } = useColorScheme();
 
-  // On ne rend rien tant que mode n'est pas défini (évite le warning)
+  // render only after (évite le warning)
   if (!mode) return null;
 
   return (

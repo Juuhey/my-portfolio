@@ -80,55 +80,6 @@ export default function Home() {
           </svg>
         </IconButton>
       </Box>
-      
-      <Box
-        sx={{
-          width: "100%",
-          mt: 6,
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          gap: 4,
-          alignItems: { xs: "flex-start", md: "stretch" },
-        }}
-      >
-        {/* Langages */}
-        <Box sx={{ flex: 1 }}>
-          <Typography variant="h3" sx={{ mb: 1 }}>
-            Langages
-          </Typography>
-          <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-            <Chip label="JavaScript" />
-            <Chip label="TypeScript" />
-            <Chip label="PHP" />
-            <Chip label="SQL" />
-            <Chip label="HTML/CSS" />
-          </Box>
-        </Box>
-        {/* Outils */}
-        <Box sx={{ flex: 1 }}>
-          <Typography variant="h3" sx={{ mb: 1 }}>
-            Outils
-          </Typography>
-          <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-            <Chip label="Figma" />
-            <Chip label="Illustrator" />
-            <Chip label="Insomnia" />
-            <Chip label="Webflow" />
-          </Box>
-        </Box>
-        {/* Compétences transverses */}
-        <Box sx={{ flex: 1 }}>
-          <Typography variant="h3" sx={{ mb: 1 }}>
-            Compétences transverses
-          </Typography>
-          <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-            <Chip label="Communication" />
-            <Chip label="Gestion de projet" />
-            <Chip label="Travail en équipe" />
-            <Chip label="Autonomie" />
-          </Box>
-        </Box>
-      </Box>
     </Box>
   );
 }

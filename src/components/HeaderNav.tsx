@@ -41,7 +41,7 @@ export default function HeaderNav({ pages }: HeaderNavProps) {
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between", minHeight: 56 }}>
-        {/* Menu burger visible sous 433px */}
+        {/* burger menu */}
         <Box sx={{ display: { xs: "flex", sm: "none" }, alignItems: "center" }}>
           <IconButton
             edge="start"
@@ -116,7 +116,7 @@ export default function HeaderNav({ pages }: HeaderNavProps) {
             </List>
           </Drawer>
         </Box>
-        {/* Menu horizontal visible au-dessus de 433px */}
+        {/* 433px + */}
         <Box
           sx={{
             display: { xs: "none", sm: "flex" },

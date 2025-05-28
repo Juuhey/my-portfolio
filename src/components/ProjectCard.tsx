@@ -2,23 +2,22 @@ import { Card, CardContent, CardMedia, Typography, CardActions, Button, Chip, Bo
 import type { Project } from '../types/Project';
 import { useTheme } from "@mui/material/styles";
 
-// ...existing code...
-// Fonction utilitaire pour déterminer si une couleur est foncée
+// constrast
 function isColorDark(hex: string) {
-  // Retire le # si présent
+  
   hex = hex.replace("#", "");
-  // Si la couleur est trop courte, retourne false (par sécurité)
+  
   if (hex.length !== 6) return false;
-  // Convertit en RGB
+
+  // convert to rgb
   const r = parseInt(hex.substring(0, 2), 16);
   const g = parseInt(hex.substring(2, 4), 16);
   const b = parseInt(hex.substring(4, 6), 16);
-  // Calcul de luminance relative (perçue)
+ 
+
   const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
   return luminance < 0.5;
 }
-
-// ...existing imports...
 
 export default function ProjectCard({ project }: { project: Project }) {
   const theme = useTheme();
@@ -67,7 +66,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             );
           })}
         </Box>
-        {/* Ajout de l'affichage des langages */}
+        {/* langages display */}
         {project.langages && project.langages.length > 0 && (
           <Box sx={{ mt: 1, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
             {project.langages.map(lang => (

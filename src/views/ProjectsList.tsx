@@ -15,7 +15,7 @@ export default function Projects() {
   const theme = useTheme();
   const tagColors = theme.palette.tagColors ?? {};
 
-  // Récupère toutes les technos/skills du thème (hors "default")
+  // get skills (technos)
   const allTags = Object.keys(tagColors).filter((tag) => tag !== "default");
 
   // Filtre les projets selon la techno sélectionnée
@@ -80,7 +80,7 @@ export default function Projects() {
           },
           gap: { sm: 2, xs: 2, md: 4 },
           width: "100%",
-          justifyItems: "center", // centre les cards dans la colonne
+          justifyItems: "center",
         }}
       >
         {filteredProjects.map((project) => (
