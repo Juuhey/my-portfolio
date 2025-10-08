@@ -38,20 +38,6 @@ export default function Home() {
         <br />
         Une idée = un outil.
       </Typography>
-      <Button
-        variant="outlined"
-        size="large"
-        href="/projets"
-        sx={{
-          borderRadius: 8,
-          px: 4,
-          py: 1.5,
-          fontWeight: 600,
-          fontSize: "1.1rem",
-        }}
-      >
-        Voir mes projets
-      </Button>
       <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
         <IconButton
           component={Link}
