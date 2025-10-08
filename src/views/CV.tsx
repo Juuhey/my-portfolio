@@ -6,7 +6,7 @@ import {
   Link,
 } from "@mui/material";
 
-import TechGrid from "../components/techGrid";
+import TechGrid from "../components/TechGrid";
 
 // Catégorisation
 const langages = [

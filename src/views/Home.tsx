@@ -1,7 +1,6 @@
 import { Box, Typography, Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { IconButton, Link } from "@mui/material";
-import Chip from "@mui/material/Chip";
 
 export default function Home() {
   return (
