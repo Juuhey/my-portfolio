@@ -165,8 +165,7 @@ export default function CV() {
           </Typography>
           <Typography variant="h4">Parcours Développement Web</Typography>
           <Typography variant="body2" color="text.secondary">
-            IUT Béziers – 2022 - aujourd'hui (actuellement en 3<sup>ème</sup>{" "}
-            année)
+            IUT Béziers – 2022 - 2025
           </Typography>
         </Box>
         <Box sx={{ mt: 2 }}>
